@@ -5,6 +5,8 @@ PyGame.CreateWindow(960, 540, True, "EasyPyGame Test")
 
 PyGame.CreateObject('Player.png')
 
+Player = PyGame.Objects[0]
+
 while PyGame.IsRunning:
     PyGame.FillScreen((200, 200, 200))
     
@@ -24,18 +26,17 @@ while PyGame.IsRunning:
     if PyGame.KeyPressed('Right'):
         PyGame.Objects[0].X += int(325 * PyGame.DeltaTime)
     
-    if PyGame.Objects[0].X < -20:
-        PyGame.Objects[0].X = 980
-    elif PyGame.Objects[0].X > 980:
-        PyGame.Objects[0].X = -20
+    if Player.X < -20:
+        Player.X = 980
+    elif Player.X > 980:
+        Player.X = -20
     
-    if PyGame.Objects[0].Y < -20:
-        PyGame.Objects[0].Y = 560
-    elif PyGame.Objects[0].Y > 560:
-        PyGame.Objects[0].Y = -20
+    if Player.Y < -20:
+        Player.Y = 560
+    elif Player.Y > 560:
+        Player.Y = -20
 
     for Object in PyGame.Objects:
-        Object.Rect = Object.Image.get_rect(topleft=(Object.X, Object.Y))
         PyGame.DrawToScreen(Object.Image, Object.Rect)
     
     PyGame.DrawToScreen(ShowcaseText, (100, 100))
