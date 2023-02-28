@@ -34,8 +34,8 @@ class EasyPyGame():
     def FillScreen(self, color):
         self.Screen.fill(color)
     
-    def DrawToScreen(self, object, rect):
-        self.Screen.blit(object, rect)
+    def DrawToScreen(self, obj, rect):
+        self.Screen.blit(obj, rect)
     
     def CreateObject(self, path):
         self.Objects.append(Object(path))
@@ -88,9 +88,16 @@ class EasyPyGame():
         pygame.mixer.music.load(path)
         pygame.mixer.music.play(-1, 0.0, fade)
     
+    def StopMusic(self):
+        pygame.mixer.music.stop()
+        pygame.mixer.music.unload()
+    
     def CreateSound(self, path):
         Sound = pygame.mixer.Sound(path)
         return Sound
+    
+    def StopSounds(self):
+        pygame.mixer.stop()
     
     def Update(self):
         for event in pygame.event.get():
@@ -100,6 +107,9 @@ class EasyPyGame():
         
         if self.IsRunning:
             self.DeltaTime = self.Clock.tick(60) / 1000
+            
+            for Obj in self.Objects:
+                Obj.Rect = Obj.Image.get_rect(topleft=(Obj.X, Obj.Y))
         
             self.Window.blit(pygame.transform.scale(self.Screen, self.Window.get_rect().size), (0, 0))
             pygame.display.flip()
