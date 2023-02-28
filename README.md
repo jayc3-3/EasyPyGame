@@ -9,6 +9,7 @@ A library that makes creating games with PyGame simple as possible
 3. Create a instance of EasyPyGame by using PyGame = EasyPyGame(). "PyGame" can be switched out with any undefined variable
 <br/>
 <br/>
+
 ## Documentation
 ### .CreateWindow(width, height, resizable, title)
 _.CreateWindow()_ creates a pygame window.
@@ -22,16 +23,19 @@ _.CreateWindow()_ creates a pygame window.
 "title" defines the title of the created window (String)
 <br/>
 <br/>
+
 ### .Update()
 _.Update()_ updates the game. This checks if the game has been closed and renders any changes made
 <br/>
 <br/>
+
 ### .KeyPressed(key)
 _.KeyPressed()_ returns a "True" or "False" if the set key is pressed.
 <br/>
 "key" is the key to be checked for a press (String)
 <br/>
 <br/>
+
 #### All valid keys
 "Up" = Up arrow key
 <br/>
