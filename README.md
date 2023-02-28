@@ -157,8 +157,12 @@ _.RotationToPosition()_ calculates the rotation angle from (x1, y1) to (x2, y2)
 
 #### .RotateImage(image, angle)
 _.RotateImage()_ rotates the provided image to the given angle
+<br/>
 "image" is the .Image attribute of a object
+<br/>
 "angle" is the angle the image will be rotated (Integer)
+<br/>
+<br/>
 
 ### Variables
 "IsRunning" is the variable that checks if the game is supposed to be running (Boolean)
