@@ -23,11 +23,19 @@ _.KeyPressed()_ returns a "True" or "False" if the set key is pressed.
 
 #### All valid keys
 "Up" = Up arrow key
+
 "Down" = Down arrow key
+
 "Left" = Left arrow key
+
 "Right" = Right arrow key
+
 "W" = W key
+
 "S" = S key
+
 "A" = A key
+
 "D" = D key
+
 "Enter" = Enter key
