@@ -12,6 +12,8 @@ EasyPyGame is a library that aims to make game development easier
 <br/>
 •Helps simplify your code
 <br/>
+•Has built-in features for rotating objects
+<br/>
 <br/>
 
 ## How to add EasyPyGame to your project
