@@ -43,6 +43,8 @@ _.FPS()_ returns the current frames per second of the game
 _.CreateObject()_ creates a game object with a image
 "pathtoimage" is the path to the image of the object _i.e. .CreateObject('Player.png')_
 <br/>
+_All objects created by this method are added to a list called '.Objects'. You must keep track of the index of specific objects, as there are currently no identifiers_
+<br/>
 <br/>
 
 #### .CreateText(text, font, fontsize, aa, color)
@@ -88,7 +90,8 @@ _.KeyPressed()_ returns "True" or "False" if the set key is pressed or not
 "Enter" = Enter key
 <br/>
 <br/>
-<br/>
+
+#### .PlayMusic()
 
 ### Variables
 "IsRunning" is the variable that checks if the game is supposed to be running (Boolean)
