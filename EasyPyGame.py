@@ -12,15 +12,18 @@ class Object():
 class EasyPyGame():
     IsRunning = True
     Objects = []
-    ObjectAmount = 0
     Clock = pygame.time.Clock()
     DeltaTime = Clock.tick(60) / 1000
     
     def __init__(self):
         pygame.init()
     
-    def CreateWindow(self, width, height, flags):
-        self.Window = pygame.display.set_mode((width, height), flags)
+    def CreateWindow(self, width, height, resizable, title):
+        if resizable == True:
+            self.Window = pygame.display.set_mode((width, height), pygame.RESIZABLE)
+        else:
+            self.Window = pygame.display.set_mode((width, height))
+        pygame.display.set_caption(title)
         self.Screen = self.Window.copy()
     
     def FPS(self):
@@ -30,12 +33,17 @@ class EasyPyGame():
     def FillScreen(self, color):
         self.Screen.fill(color)
     
-    def DrawToScreen(self, image, rect):
-        self.Screen.blit(image, rect)
+    def DrawToScreen(self, object, rect):
+        self.Screen.blit(object, rect)
     
     def CreateObject(self, pathtoimage):
         self.Objects.append(Object(pathtoimage))
         self.ObjectAmount += 1
+    
+    def CreateText(self, text, font, fontsize, aa, color):
+        Font = pygame.font.Font(font, fontsize)
+        Text = Font.render(text, aa, color)
+        return Text
     
     def KeyPressed(self, key):
         if key == "Up":
