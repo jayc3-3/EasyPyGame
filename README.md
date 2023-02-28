@@ -20,13 +20,16 @@ _.CreateWindow()_ creates a pygame window.
 
 "title" defines the title of the created window (String)
 
+
 ### .Update()
 _.Update()_ updates the game. This checks if the game has been closed and renders any changes made
+
 
 ### .KeyPressed(key)
 _.KeyPressed()_ returns a "True" or "False" if the set key is pressed.
 
 "key" is the key to be checked for a press (String)
+
 
 #### All valid keys
 "Up" = Up arrow key
