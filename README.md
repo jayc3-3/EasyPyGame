@@ -30,6 +30,7 @@ _.Update()_ updates the game. This checks if the game has been closed and render
 
 #### .FillScreen(color)
 _.FillScreen()_ fills the screen with a color
+<br/>
 "color" is the color the screen is to be filled with. Input the R, G, and B values into parenthesis _i.e. .FillScreen((255, 255, 255))_
 <br/>
 <br/>
@@ -41,6 +42,7 @@ _.FPS()_ returns the current frames per second of the game
 
 #### .CreateObject(pathtoimage)
 _.CreateObject()_ creates a game object with a image
+<br/>
 "pathtoimage" is the path to the image of the object _i.e. .CreateObject('Player.png')_
 <br/>
 _All objects created by this method are added to a list called '.Objects'. You must keep track of the index of specific objects, as there are currently no identifiers_
@@ -49,17 +51,24 @@ _All objects created by this method are added to a list called '.Objects'. You m
 
 #### .CreateText(text, font, fontsize, aa, color)
 _.CreateText()_ creates text that can be drawn to the screen.
+<br/>
 "text" is the text you want to display (String)
+<br/>
 "font" is the path to the ttf font you want to use _i.e. 'Arial.ttf'_
+<br/>
 "fontsize" is the size of text (Integer)
+<br/>
 "aa" is whether or not the text will use anti-aliasing (Boolean)
+<br/>
 "color" is the color of the text. Input the R, G, and B values into parenthesis _i.e. .CreateText("Hello!", 'Arial.ttf', 50, True, (255, 255, 255))_
 <br/>
 <br/>
 
 #### .DrawToScreen(object, rect)
 _.DrawToScreen()_ draws a object to the screen
+<br/>
 "object" is the object to be drawn
+<br/>
 "rect" is the x and y position of the object inside of a parenthesis _i.e. (50, 100) or the .Rect if it's being used on a object created with .CreateObject()_
 <br/>
 <br/>
