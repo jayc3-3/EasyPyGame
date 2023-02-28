@@ -168,6 +168,8 @@ _.Collision()_ checks for a collision between 2 object rects
 <br/>
 "rect1" and "rect2" are the rects that will be checked for collision
 <br/>
+e.g. if EasyPyGame.Collision(Player.Rect, Enemy.Rect):
+<br/>
 <br/>
 
 #### .RotationToPosition(x1, y1, x2, y2)
@@ -177,7 +179,7 @@ _.RotationToPosition()_ calculates the rotation angle from (x1, y1) to (x2, y2)
 <br/>
 "x2" and "y2" are the second pair of coordinates (Integers)
 <br/>
-e.g. EasyPyGame.RotationToPosition(Player.X, Player.Y, Mouse.X, Mouse.Y)
+e.g. PlayerAngle = EasyPyGame.RotationToPosition(Player.X, Player.Y, Mouse.X, Mouse.Y)
 <br/>
 <br/>
 
