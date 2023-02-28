@@ -23,6 +23,16 @@ while PyGame.IsRunning:
 
     if PyGame.KeyPressed('Right'):
         PyGame.Objects[0].X += int(325 * PyGame.DeltaTime)
+    
+    if PyGame.Objects[0].X < -20:
+        PyGame.Objects[0].X = 980
+    elif PyGame.Objects[0].X > 980:
+        PyGame.Objects[0].X = -20
+    
+    if PyGame.Objects[0].Y < -20:
+        PyGame.Objects [0].Y = 560
+    elif PyGame.Objects[0].Y > 560:
+        PyGame.Objects[0].Y = -20
 
     for Object in PyGame.Objects:
         Object.Rect = Object.Image.get_rect(topleft=(Object.X, Object.Y))
