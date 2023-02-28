@@ -4,15 +4,11 @@ EasyPyGame is a library that aims to make game development easier
 ## Features
 •Easy setup
 <br/>
-•Shortens length of code
+•Helps simplify code
 <br/>
-•Supports playing music files/sound effects
+•Has built-in functions for rotating objects
 <br/>
-•Supports ttf font rendering
-<br/>
-•Helps simplify your code
-<br/>
-•Has built-in features for rotating objects
+•Makes rendering text easy
 <br/>
 <br/>
 
