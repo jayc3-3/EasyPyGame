@@ -92,6 +92,9 @@ _.KeyPressed()_ returns "True" or "False" if the set key is pressed or not
 
 ### Variables
 "IsRunning" is the variable that checks if the game is supposed to be running (Boolean)
+<br/>
 "Objects" is a list of all game objects (List)
+<br/>
 "DeltaTime" is the time since the last frame was rendered (Integer)
+<br/>
 "X" and "Y" are exclusive to objects, and they determine the position of a object (Integer)
