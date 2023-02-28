@@ -1,5 +1,6 @@
 print("Made with EasyPyGame 1.0.0")
 import pygame
+import math
 
 class Object():
     X = 0
@@ -44,6 +45,17 @@ class EasyPyGame():
         Font = pygame.font.Font(font, fontsize)
         Text = Font.render(text, aa, color)
         return Text
+    
+    def RotationToPosition(self, x1, y1, x2, y2):
+        relx, rely = (x2 - x1), (y2 - y1)
+        angle = int(math.degrees(math.atan2(-rely, relx)))
+        return angle
+    
+    def Collision(self, rect1, rect2):
+        if rect1.colliderect(rect2):
+            return True
+        
+        return None
     
     def KeyPressed(self, key):
         if key == "Up":
