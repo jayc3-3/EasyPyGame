@@ -5,8 +5,8 @@ class Object():
     X = 0
     Y = 0
     
-    def __init__(self, pathtoimage):
-        self.Image = pygame.image.load(pathtoimage)
+    def __init__(self, path):
+        self.Image = pygame.image.load(path)
         self.Image.convert()
         self.Rect = self.Image.get_rect(topleft=(self.X, self.Y))
 
@@ -37,8 +37,8 @@ class EasyPyGame():
     def DrawToScreen(self, object, rect):
         self.Screen.blit(object, rect)
     
-    def CreateObject(self, pathtoimage):
-        self.Objects.append(Object(pathtoimage))
+    def CreateObject(self, path):
+        self.Objects.append(Object(path))
     
     def CreateText(self, text, font, fontsize, aa, color):
         Font = pygame.font.Font(font, fontsize)
@@ -83,6 +83,14 @@ class EasyPyGame():
                 return True
         
         return None
+    
+    def PlayMusic(self, path, fade):
+        pygame.mixer.music.load(path)
+        pygame.mixer.music.play(-1, 0.0, fade)
+    
+    def CreateSound(self, path):
+        Sound = pygame.mixer.Sound(path)
+        return Sound
     
     def Update(self):
         for event in pygame.event.get():
