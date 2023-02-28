@@ -40,10 +40,10 @@ _.FPS()_ returns the current frames per second of the game
 <br/>
 <br/>
 
-#### .CreateObject(pathtoimage)
+#### .CreateObject(path)
 _.CreateObject()_ creates a game object with a image
 <br/>
-"pathtoimage" is the path to the image of the object _e.g. .CreateObject('Player.png')_
+"path" is the path to the image of the object _e.g. .CreateObject('Player.png')_
 <br/>
 _All objects created by this method are added to a list called '.Objects'. You can identify specific objects by assigning them a new name. e.g. 'Player = EasyPyGame.Objects[0]'_
 <br/>
