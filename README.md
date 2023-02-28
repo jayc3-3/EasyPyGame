@@ -58,12 +58,13 @@ _.CreateText()_ creates text that can be drawn to the screen.
 _.DrawToScreen()_ draws a object to the screen
 "object" is the object to be drawn
 "rect" is the x and y position of the object inside of a parenthesis _i.e. (50, 100) or the .Rect if it's being used on a object created with .CreateObject()_
+<br/>
+<br/>
 
 ### .KeyPressed(key)
 _.KeyPressed()_ returns a "True" or "False" if the set key is pressed
 <br/>
 "key" is the key to be checked for a press (String)
-<br/>
 <br/>
 
 #### All valid keys
