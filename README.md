@@ -135,6 +135,15 @@ _.Collision()_ checks for a collision between 2 object rects
 <br/>
 <br/>
 
+#### .RotationToPosition(x1, y1, x2, y2)
+_.RotationToPosition()_ calculates the rotation angle from (x1, y1) to (x2, y2)
+<br/>
+"x1" and "y1" are the first pair of coordinates
+<br/>
+"x2" and "y2" are the second pair of coordinates
+<br/>
+<br/>
+
 ### Variables
 "IsRunning" is the variable that checks if the game is supposed to be running (Boolean)
 <br/>
