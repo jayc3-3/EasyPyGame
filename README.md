@@ -14,7 +14,7 @@ EasyPyGame is a python library built upon pygame that aims to make game developm
 
 ## How to add EasyPyGame to your project
 1. Download EasyPyGame.py and insert it into the directory of your module
-2. Put "from EasyPyGame import *" near the top of the module
+2. Put "from EasyPyGame import *" at the top of the module
 3. Create a instance of EasyPyGame by using PyGame = EasyPyGame(). "PyGame" can be switched out with any undefined variable
 <br/>
 <br/>
