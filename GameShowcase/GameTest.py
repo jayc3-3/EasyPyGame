@@ -1,7 +1,8 @@
+#This is a example of a game made with EasyPyGame that utilizes the features of the library
 from EasyPyGame import *
 
 PyGame = EasyPyGame()
-PyGame.CreateWindow(960, 540, True, "EasyPyGame Test")
+PyGame.CreateWindow(960, 540, True, "EasyPyGame Game")
 
 PyGame.CreateObject('Player.png')
 
