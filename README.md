@@ -103,9 +103,18 @@ _.KeyPressed()_ returns "True" or "False" if the set key is pressed or not
 #### .PlayMusic(path, fade)
 _.PlayMusic()_ plays a .mp3 or .ogg file as music
 <br/>
-"path" is the path to the music file
+"path" is the path to the music file (String)
 <br/>
-"fade" is the time in milliseconds that the music fades in
+"fade" is the time in milliseconds that the music fades in (Integer)9
+<br/>
+<br/>
+
+#### .CreateSound(path)
+_.CreateSound()_ returns a sound that can be played
+<br/>
+"path" is the path to the sound file
+<br/>
+Call .play() on the sound to play the audio
 <br/>
 <br/>
 
