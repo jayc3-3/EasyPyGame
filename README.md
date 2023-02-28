@@ -32,31 +32,40 @@ _.CreateWindow()_ creates a pygame window.
 <br/>
 "title" defines the title of the created window (String)
 <br/>
+e.g. EasyPyGame.CreateWindow(1920, 1080, True, "Best Game Ever")
+<br/>
 <br/>
 
 #### .Update()
 _.Update()_ updates the game. This checks if the game has been closed and renders any changes made
+<br/>
+e.g. EasyPyGame.Update()
 <br/>
 <br/>
 
 #### .FillScreen(color)
 _.FillScreen()_ fills the screen with a color
 <br/>
-"color" is the color the screen is to be filled with. Input the R, G, and B values into parenthesis _e.g. .FillScreen((255, 255, 255))_
+"color" is the color the screen is to be filled with. Input the R, G, and B values into parenthesis
+<br/>
+e.g. EasyPyGame.FillScreen((200, 200, 200))
 <br/>
 <br/>
 
 #### .FPS()
 _.FPS()_ returns the current frames per second of the game
 <br/>
+e.g. print(EasyPyGame.FPS())
+<br/>
 <br/>
 
 #### .CreateObject(path)
 _.CreateObject()_ creates a game object with a image
 <br/>
-"path" is the path to the image of the object _e.g. .CreateObject('Player.png')_
+"path" is the path to the image of the object
 <br/>
-_All objects created by this method are added to a list called '.Objects'. You can identify specific objects by assigning them a new name. e.g. 'Player = EasyPyGame.Objects[0]'_
+e.g. EasyPyGame.CreateObject('Player.png')
+Player = EasyPyGame.Objects[0]
 <br/>
 <br/>
 
@@ -65,22 +74,26 @@ _.CreateText()_ creates text that can be drawn to the screen.
 <br/>
 "text" is the text you want to display (String)
 <br/>
-"font" is the path to the ttf font you want to use _e.g. 'Arial.ttf'_
+"font" is the path to the ttf font you want to use
 <br/>
 "fontsize" is the size of text (Integer)
 <br/>
 "aa" is whether or not the text will use anti-aliasing (Boolean)
 <br/>
-"color" is the color of the text. Input the R, G, and B values into parenthesis _e.g. .CreateText("Hello!", 'Arial.ttf', 50, True, (255, 255, 255))_
+"color" is the color of the text. Input the R, G, and B values into parenthesis
+<br/>
+e.g. EasyPyGame.CreateText("Hello!", 'Arial.ttf', 50, True, (255, 255, 255))
 <br/>
 <br/>
 
 #### .DrawToScreen(object, rect)
 _.DrawToScreen()_ draws a object to the screen
 <br/>
-"object" is the object to be drawn
+"object" is the image attribute of a object that is to be drawn
 <br/>
-"rect" is the x and y position of the object inside of a parenthesis _e.g. (50, 100) or the .Rect if it's being used on a object created with .CreateObject()_
+"rect" is the x and y position of the object inside of parenthesis
+<br/>
+e.g. EasyPyGame.DrawToScreen(Player.Image, Player.Rect)
 <br/>
 <br/>
 
@@ -88,6 +101,9 @@ _.DrawToScreen()_ draws a object to the screen
 _.KeyPressed()_ returns "True" or "False" if the set key is pressed or not
 <br/>
 "key" is the key to be checked for a press (String)
+<br/>
+e.g. if EasyPyGame.KeyPressed("Up"):
+<br/>
 <br/>
 
 ##### All valid keys
@@ -118,6 +134,8 @@ _.PlayMusic()_ plays a file as music
 <br/>
 "fade" is the time in milliseconds that the music fades in (Integer)
 <br/>
+e.g. EasyPyGame.PlayMusic('epicsong.ogg', 500)
+<br/>
 <br/>
 
 #### .CreateSound(path)
@@ -127,15 +145,21 @@ _.CreateSound()_ returns a sound that can be played
 <br/>
 Call .play() on the sound to play the audio
 <br/>
+e.g. Sound = EasyPyGame.CreateSound('sound.wav')
+<br/>
 <br/>
 
 #### .StopMusic()
 _.StopMusic()_ stops and unloads the currently playing song
 <br/>
+e.g. EasyPyGame.StopMusic()
+<br/>
 <br/>
 
 #### .StopSounds()
 _.StopSounds()_ stops all sound effects playing (this excludes the currently playing music)
+<br/>
+e.g. EasyPyGame.StopSounds
 <br/>
 <br/>
 
@@ -153,6 +177,8 @@ _.RotationToPosition()_ calculates the rotation angle from (x1, y1) to (x2, y2)
 <br/>
 "x2" and "y2" are the second pair of coordinates (Integers)
 <br/>
+e.g. EasyPyGame.RotationToPosition(Player.X, Player.Y, Mouse.X, Mouse.Y)
+<br/>
 <br/>
 
 #### .RotateImage(image, angle)
@@ -161,6 +187,8 @@ _.RotateImage()_ rotates the provided image to the given angle
 "image" is the .Image attribute of a object
 <br/>
 "angle" is the angle the image will be rotated (Integer)
+<br/>
+e.g. EasyPyGame.RotateImage(Player.Image, PlayerAngle)
 <br/>
 <br/>
 
