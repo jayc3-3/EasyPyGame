@@ -51,6 +51,10 @@ class EasyPyGame():
         angle = int(math.degrees(math.atan2(-rely, relx)))
         return angle
     
+    def RotateImage(self, image, angle):
+        rotated = pygame.transform.rotate(image, angle)
+        return rotated
+    
     def Collision(self, rect1, rect2):
         if rect1.colliderect(rect2):
             return True
