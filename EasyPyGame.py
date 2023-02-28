@@ -16,6 +16,7 @@ class EasyPyGame():
     DeltaTime = Clock.tick(60) / 1000
     
     def __init__(self):
+        print("Made with EasyPyGame 1.0.0")
         pygame.init()
     
     def CreateWindow(self, width, height, resizable, title):
