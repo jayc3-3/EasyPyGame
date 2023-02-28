@@ -118,6 +118,16 @@ Call .play() on the sound to play the audio
 <br/>
 <br/>
 
+#### .StopMusic()
+_.StopMusic()_ stops and unloads the currently playing song
+<br/>
+<br/>
+
+#### .StopSounds()
+_.StopSounds()_ stops all sound effects playing (this excludes the currently playing music)
+<br/>
+<br/>
+
 ### Variables
 "IsRunning" is the variable that checks if the game is supposed to be running (Boolean)
 <br/>
