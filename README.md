@@ -3,10 +3,16 @@ EasyPyGame is a library that aims to make game development easier
 <br/>
 ## Features
 •Easy setup
+<br/>
 •Shortens length of code
+<br/>
 •Supports playing music files/sound effects
+<br/>
 •Supports ttf font rendering
+<br/>
 •Helps simplify your code
+<br/>
+<br/>
 
 ## How to add EasyPyGame to your project
 1. Download EasyPyGame.py and insert it into the directory of your module
