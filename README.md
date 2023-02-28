@@ -149,11 +149,16 @@ _.Collision()_ checks for a collision between 2 object rects
 #### .RotationToPosition(x1, y1, x2, y2)
 _.RotationToPosition()_ calculates the rotation angle from (x1, y1) to (x2, y2)
 <br/>
-"x1" and "y1" are the first pair of coordinates
+"x1" and "y1" are the first pair of coordinates (Integers)
 <br/>
-"x2" and "y2" are the second pair of coordinates
+"x2" and "y2" are the second pair of coordinates (Integers)
 <br/>
 <br/>
+
+#### .RotateImage(image, angle)
+_.RotateImage()_ rotates the provided image to the given angle
+"image" is the .Image attribute of a object
+"angle" is the angle the image will be rotated (Integer)
 
 ### Variables
 "IsRunning" is the variable that checks if the game is supposed to be running (Boolean)
