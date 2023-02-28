@@ -1,3 +1,4 @@
+#This is a small game made with EasyPyGame
 from EasyPyGame import *
 
 PyGame = EasyPyGame()
@@ -30,7 +31,7 @@ while PyGame.IsRunning:
         PyGame.Objects[0].X = -20
     
     if PyGame.Objects[0].Y < -20:
-        PyGame.Objects [0].Y = 560
+        PyGame.Objects[0].Y = 560
     elif PyGame.Objects[0].Y > 560:
         PyGame.Objects[0].Y = -20
 
