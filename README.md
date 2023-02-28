@@ -4,7 +4,7 @@ A library that makes creating games with PyGame simple as possible
 ## How to add EasyPyGame to your project
 1. Download EasyPyGame.py and insert it into the directory of your module
 <br/>
-2. Put "from EasyPyGame import *" near the top of the module
+2. Put from EasyPyGame import * near the top of the module
 <br/>
 3. Create a instance of EasyPyGame by using PyGame = EasyPyGame(). "PyGame" can be switched out with any undefined variable
 <br/>
