@@ -16,7 +16,7 @@ _.CreateWindow()_ creates a pygame window.
 
 "height" sets the height of the window (Int)
 
-"resizable" defines if the window should be resizable or not (Bool)
+"resizable" defines if the window should be resizable or not (Boolean)
 
 "title" defines the title of the created window (String)
 
