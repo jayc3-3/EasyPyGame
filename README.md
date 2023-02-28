@@ -128,6 +128,13 @@ _.StopSounds()_ stops all sound effects playing (this excludes the currently pla
 <br/>
 <br/>
 
+#### .Collision(rect1, rect2)
+_.Collision()_ checks for a collision between 2 object rects
+<br/>
+"rect1" and "rect2" are the rects that will be checked for collision
+<br/>
+<br/>
+
 ### Variables
 "IsRunning" is the variable that checks if the game is supposed to be running (Boolean)
 <br/>
