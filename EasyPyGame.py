@@ -38,7 +38,6 @@ class EasyPyGame():
     
     def CreateObject(self, pathtoimage):
         self.Objects.append(Object(pathtoimage))
-        self.ObjectAmount += 1
     
     def CreateText(self, text, font, fontsize, aa, color):
         Font = pygame.font.Font(font, fontsize)
