@@ -63,7 +63,7 @@ _.DrawToScreen()_ draws a object to the screen
 <br/>
 
 #### .KeyPressed(key)
-_.KeyPressed()_ returns a "True" or "False" if the set key is pressed
+_.KeyPressed()_ returns "True" or "False" if the set key is pressed or not
 <br/>
 "key" is the key to be checked for a press (String)
 <br/>
