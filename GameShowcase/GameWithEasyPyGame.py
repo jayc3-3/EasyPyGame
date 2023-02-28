@@ -1,4 +1,3 @@
-#This is a small game made with EasyPyGame
 from EasyPyGame import *
 
 PyGame = EasyPyGame()
