@@ -100,7 +100,14 @@ _.KeyPressed()_ returns "True" or "False" if the set key is pressed or not
 <br/>
 <br/>
 
-#### .PlayMusic()
+#### .PlayMusic(path, fade)
+_.PlayMusic()_ plays a .mp3 or .ogg file as music
+<br/>
+"path" is the path to the music file
+<br/>
+"fade" is the time in milliseconds that the music fades in
+<br/>
+<br/>
 
 ### Variables
 "IsRunning" is the variable that checks if the game is supposed to be running (Boolean)
