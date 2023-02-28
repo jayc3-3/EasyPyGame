@@ -1,5 +1,5 @@
 # EasyPyGame
-A library that makes creating games with PyGame simple as possible
+EasyPyGame is a library that aims to make game development easier
 
 ## How to add EasyPyGame to your project
 1. Download EasyPyGame.py and insert it into the directory of your module
