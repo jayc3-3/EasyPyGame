@@ -143,9 +143,15 @@ _.CreateSound()_ returns a sound that can be played
 <br/>
 "path" is the path to the sound file
 <br/>
-Call .play() on the sound to play the audio
-<br/>
 e.g. Sound = EasyPyGame.CreateSound('sound.wav')
+<br/>
+<br/>
+
+#### .PlaySound(sound)
+<br/>
+_.PlaySound()_ plays the input sound
+<br/>
+e.g. EasyPyGame.PlaySound(Sound)
 <br/>
 <br/>
 
