@@ -36,6 +36,15 @@ e.g. EasyPyGame.CreateWindow(1920, 1080, True, "Best Game Ever")
 <br/>
 <br/>
 
+#### .SetWindowIcon(path)
+_.SetWindowIcon()_ sets the icon of the EasyPyGame window
+<br/>
+"path" is the path to the icon image
+<br/>
+e.g. EasyPyGame.SetWindowIcon("/Assets/WindowIcon.png")
+<br/>
+<br/>
+
 #### .Update()
 _.Update()_ updates the game. This checks if the game has been closed and renders any changes made
 <br/>
