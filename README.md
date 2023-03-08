@@ -199,6 +199,13 @@ e.g. EasyPyGame.RotateImage(Player.Image, PlayerAngle)
 <br/>
 <br/>
 
+#### .StopAudio()
+_.StopAudio()_ stops all currently playing audio
+<br/>
+e.g. EasyPyGame.StopAudio()
+<br/>
+<br/>
+
 ### Variables
 "IsRunning" is the variable that checks if the game is supposed to be running (Boolean)
 <br/>
