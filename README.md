@@ -74,6 +74,9 @@ _.CreateObject()_ creates a game object with a image
 "path" is the path to the image of the object
 <br/>
 e.g. EasyPyGame.CreateObject('Player.png')
+<br/>
+You can set a easy to remember name by doing something like:
+<br/>
 Player = EasyPyGame.Objects[0]
 <br/>
 <br/>
