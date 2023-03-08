@@ -1,4 +1,4 @@
-print("Made with EasyPyGame 1.0.0")
+print("Made with EasyPyGame 1.0.1")
 import pygame
 import math
 
@@ -16,6 +16,7 @@ class EasyPyGame():
     Objects = []
     Clock = pygame.time.Clock()
     DeltaTime = Clock.tick(60) / 1000
+    ObjectCount = 0
     
     def __init__(self):
         pygame.init()
@@ -28,6 +29,9 @@ class EasyPyGame():
         pygame.display.set_caption(title)
         self.Screen = self.Window.copy()
     
+    def SetWindowIcon(self, path):
+        pygame.display.set_icon(pygame.image.load(str(path)))
+
     def FPS(self):
         fps = round(self.Clock.get_fps())
         return fps
@@ -39,7 +43,10 @@ class EasyPyGame():
         self.Screen.blit(obj, rect)
     
     def CreateObject(self, path):
+        self.ObjectCount += 1
         self.Objects.append(Object(path))
+        print("EasyPyGame: Created object #" + str(self.ObjectCount))
+        return(self.Objects[(self.ObjectCount - 1)])
     
     def CreateText(self, text, font, fontsize, aa, color):
         Font = pygame.font.Font(font, fontsize)
@@ -115,6 +122,14 @@ class EasyPyGame():
     def StopSounds(self):
         pygame.mixer.stop()
     
+    def PlaySound(self, sound):
+        sound.play()
+
+    def StopAudio():
+        pygame.mixer.music.stop()
+        pygame.mixer.music.unload()
+        pygame.mixer.stop()
+
     def Update(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
