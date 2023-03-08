@@ -1,5 +1,5 @@
 # EasyPyGame
-EasyPyGame is a python library built upon pygame that aims to make game development easier
+EasyPyGame is a python library built upon pygame that aims to make game development in python as easy as possible
 <br/>
 ## Features
 •Easy setup
