@@ -223,6 +223,8 @@ e.g. EasyPyGame.StopAudio()
 <br/>
 "Objects" is a list of all game objects (List)
 <br/>
+"ObjectCount" keeps count of the amount of game objects
+<br/>
 "DeltaTime" is the time since the last frame was rendered (Integer)
 <br/>
 "X" and "Y" are exclusive to objects, and they determine the position of a object (Integer)
