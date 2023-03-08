@@ -148,7 +148,6 @@ e.g. Sound = EasyPyGame.CreateSound('sound.wav')
 <br/>
 
 #### .PlaySound(sound)
-<br/>
 _.PlaySound()_ plays the input sound
 <br/>
 e.g. EasyPyGame.PlaySound(Sound)
